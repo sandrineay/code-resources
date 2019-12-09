@@ -1,3 +1,5 @@
 <% @posts.each do |post| %>
-  <strong><%= post.id %> - <%= post.title %></strong>
+  <strong><%= post.id %> - <%= post.title %></strong> - <%= link_to 'More', post_path(post) %>
 <% end %>
+
+<%= link_to 'Create new post', new_post_path %>
