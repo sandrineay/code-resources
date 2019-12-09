@@ -13,7 +13,6 @@ test:
   <<: *default
   database: code_resource_test
   username: postgres
-  password: <%= ENV['DATABASE_PASSWORD'] %>
 
 production:
   <<: *default
